@@ -10,7 +10,7 @@ repositories {
 }
 apply plugin: 'application'
 application {
-    mainClass = 'App'
+    mainClassName = 'App'
 }
 
 dependencies {
