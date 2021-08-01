@@ -13,6 +13,7 @@ public class App {
         System.out.println("TEST CASE -1 given test case");
         coffeeMachineService = new CoffeeMachineService(content);
         coffeeMachineService.processBeverageRequests();
+        System.out.println("TEST CASE -1 end");
 
         // Test case -2
         content = "src/main/resources/testcase2.txt";
@@ -21,11 +22,13 @@ public class App {
         System.out.println("Refill ingredients to max");
         coffeeMachineService.refillAllIngredients();
         coffeeMachineService.processBeverageRequests();
+        System.out.println("TEST CASE - 2 end");
 
         // Test case -3
         content = "src/main/resources/testcase3.txt";
         System.out.println("TEST CASE -3, check invalid ingredients and single outlet");
         coffeeMachineService = new CoffeeMachineService(content);
         coffeeMachineService.processBeverageRequests();
+        System.out.println("TEST CASE - 3 end");
     }
 }

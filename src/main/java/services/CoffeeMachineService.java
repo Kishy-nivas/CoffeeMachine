@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 public class CoffeeMachineService {
     private final MachineIngredientDao machineIngredientDao;
     private final ThreadPoolExecutor executor;
-    // Every 1 ms we check for low ingredients, setting this low to see this in working.
+    // Every 2 ms we check for low ingredients, setting this low to see this in working.
     private static final int LOW_INGREDIENT_TIMER_INTERVAL = 2;
     // Lets assume any ingredient running below 100 qty is low and needs to be refilled.
     private static  final int LOW_INGREDIENT_THRESHOLD = 100;
